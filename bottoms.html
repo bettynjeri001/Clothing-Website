@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottoms</title> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .btn3{
+            text-align: right;
+            justify-content: right;
+            border-color: black;
+        }
+        .btn3:hover{
+            background-color: white;
+        }
+        .card-footer{
+            display: flexbox;
+        }
+        .card{
+            width: 350px;
+            padding-bottom: 10px;
+        
+            gap: 0px;
+            transition: transform 0.3s ease;
+             box-shadow: grey;
+        }
+        .card:hover{
+            transform: translateY(-10px);
+        }
+        .row{
+            padding-left: 40px;
+            padding-bottom: 0px;
+        }
+        .col{
+            padding-left: 40px;
+            padding-bottom: 0px;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+        
+    
+        }
+        .brand-logo{
+
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            background-color: #f1efe7;
+            margin: 0px;
+            padding-right: 0px;
+            padding-left: 0px;
+        
+        }
+        
+        .nav-item{
+            background-color: #f1efe7;
+        }
+        .btn:hover{
+            color: grey
+        }
+        .bt{
+            transition: ease;
+        }
+        .btn-search{
+            color: black;
+            border: black;
+        }
+        .btn-search:hover{
+            background-color: gray;
+        }
+        .card-title{
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 60px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            justify-content: center;
+            text-decoration: double;
+            color: black;
+        
+        }
+        .card-text{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 30px;
+            font-size: medium;
+            
+        }
+        .btn-text{
+            padding: 3px;
+            border: 10px;
+            color: black;
+            border: black;
+            border-style: double;
+        }
+        .btn-text:hover{
+            background-color: lightgrey;
+            color: black;}.container2{
+                background-color: #f1efe7;
+            }
+        .bg-body-tertiary{
+            background-color: #f1efe7;
+            margin: auto;
+        }
+        .pt{
+            padding-left: 30px;
+            padding-top: 40px;
+        } 
+        .col-md-5{
+            padding-top: 30px;
+        }
+        
+
+
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <a class="brand-logo" href="land.html"><img src="logo br.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+    
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  NEW IN
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  COLLECTIONS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="concrete.html">Concrete Dreams</a></li>
+                  <li><a class="dropdown-item" href="studios.html">Studios@</a></li>
+                  <li><a class="dropdown-item" href="royals.html">Bereal x royals</a></li>
+                  <li><a class="dropdown-item" href="threads.html">Throwback Threads</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  CLOTHING
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="tshirt.html">T-Shirts/Shirts</a></li>
+                  <li><a class="dropdown-item" href="hoodies.html">Hoodies</a></li>
+                  <li><a class="dropdown-item" href="bottoms.html">Bottoms</a></li>
+                </ul>
+    
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  CURR/COUNTRY
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="#">KENYA(KSH)</a></li>
+                  <li><a class="dropdown-item" href="#">UNITED STATES(USD)</a></li>
+                  <li><a class="dropdown-item" href="#">UK(GBP)</a></li>
+                  <li><a class="dropdown-item" href="#">FRANCE(EUR)</a></li>
+                  <li><a class="dropdown-item" href="#">JAPAN(JPY)</a></li>
+                  <li><a class="dropdown-item" href="#">AUSTRALIA(AUD)</a></li>
+                  <li><a class="dropdown-item" href="#">NIGERIA(NGN)</a></li>
+                </ul>
+              </li>
+    
+              <a href="store.html" class="btn">STORE</a>
+              <a href="About.html" class="btn">ABOUT</a>
+              <a href="acc.html" class="btn">ACCOUNT</a><form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn-search btn-outline-success" type="submit">Search</button>
+                </form>
+               </div>
+              </nav>
+
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="jogger.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title2">Joggers</h5>
+              <p class="card-text2">Volcano.</p>
+              <small class="text-body-secondary">Ksh 3000</small>
+            </div>
+            <div class="card-footer">
+              <button class="btn3">View Options</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="jogger3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title2">Closed Hem Jogger</h5>
+              <p class="card-text2">Stone.</p>
+              <small class="text-body-secondary">Ksh 2800</small>
+            </div>
+            <div class="card-footer">
+              <button class="btn3">View Options</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="jogger2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title2">Joggers</h5>
+              <p class="card-text2">Mocha.</p>
+              <small class="text-body-secondary">Ksh 3000</small>
+            </div>
+            <div class="card-footer">
+              <button class="btn3">View Options</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="wleg3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title2">Wide Leg Pants</h5>
+              <p class="card-text2">Biege.</p>
+              <small class="text-body-secondary">Ksh 2000</small>
+            </div>
+            <div class="card-footer">
+          
+              <button class="btn3">View Options</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="wleg.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title2">Wide Leg Pants</h5>
+              <p class="card-text2">Storm Grey.</p>
+              <small class="text-body-secondary">Ksh 2000</small>
+            </div>
+            <div class="card-footer">
+              <button class="btn3">View Options</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="wleg2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title2">Wide Leg Pants</h5>
+              <p class="card-text2">Black.</p>
+              <small class="text-body-secondary">Ksh 2000</small>
+            </div>
+            <div class="card-footer">
+              <button class="btn3">View Options</button>
+            </div>
+          </div>
+        </div>
+    </div> 
+       <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+              <img src="tracksuit.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title2">Trackpants</h5>
+                <p class="card-text2">Nylon Black.</p>
+                <small class="text-body-secondary">Ksh 2500</small>
+              </div>
+              <div class="card-footer">
+                <button class="btn3">View Options</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="cargo.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <br><br><br>
+                <h5 class="card-title2">Open Hem Cargo Pants</h5>
+                <p class="card-text2">Shadow.</p>
+                <small class="text-body-secondary">Ksh 3000</small>
+              </div>
+              <div class="card-footer">
+                <button class="btn3">View Options</button>
+              </div>
+            </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                  <img src="cargo2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title2">Closed Hem Cargo Pants</h5>
+                    <p class="card-text2">Off White.</p>
+                    <small class="text-body-secondary">Ksh 3000</small>
+                  </div>
+                  <div class="card-footer">
+                    <button class="btn3">View Options</button>
+                  </div>
+                </div>
+          </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+              <img src="cord.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title2">Courdry</h5>
+                <p class="card-text2">Mocha Brown.</p>
+                <small class="text-body-secondary">Ksh 3000</small>
+              </div>
+              <div class="card-footer">
+                <button class="btn3">View Options</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="shorts.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title2">Cargo Shorts</h5>
+                <p class="card-text2">Black.</p>
+                <small class="text-body-secondary">Ksh 2000</small>
+              </div>
+              <div class="card-footer">
+                <button class="btn3">View Options</button>
+              </div>
+            </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                  <img src="shorts2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title2">Cotton Shorts</h5>
+                    <p class="card-text2">Black.</p>
+                    <small class="text-body-secondary">Ksh 2000</small>
+                  </div>
+                  <div class="card-footer">
+                    <button class="btn3">View Options</button>
+                  </div>
+                </div>
+                </div>
+                </div>
+               
+               <!-- Footer -->
+<footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container2">
+           
+           <!-- Section: Form -->
+           <section class="">
+             <form action="">
+               <!--Grid row-->
+               <div class="row d-flex justify-content-center">
+                 <!--Grid column-->
+                 <div class="col-auto">
+                   <p class="pt-2">
+                     <strong>Stay Connected
+                       <br>Sign up for our newsletter and get 10% OFF your next order!</strong>
+                   </p>
+                 </div>
+                 <!--Grid column-->
+       
+                 <!--Grid column-->
+                 <div class="col-md-5 col-12">
+                   <!-- Email input -->
+                   <div data-mdb-input-init class="form-outline mb-4">
+                     <input type="email" id="form5Example24" class="form-control" />
+                     <label class="form-label" for="form5Example24">Email address</label>
+                      <!-- Name input -->
+                   <div data-mdb-input-init class="form-outline mb-4">
+                     <input type="name" id="form5Example24" class="form-control" />
+                     <label class="form-label" for="form5Example24">First Name</label>
+                     <!-- Name input -->
+                   <div data-mdb-input-init class="form-outline mb-4">
+                     <input type="name" id="form5Example24" class="form-control" />
+                     <label class="form-label" for="form5Example24">Last Name</label>
+       
+                   </div>
+                 </div>
+                 <!--Grid column-->
+       
+                 <!--Grid column-->
+                 <div class="col-auto">
+                   <!-- Submit button -->
+                   <button data-mdb-ripple-init type="submit" class="btn2">
+                     SUBSCRIBE
+                   </button>
+                 </div>
+                 <!--Grid column-->
+               </div>
+               <!--Grid row-->
+             </form>
+           </section>
+           <!-- Section: Form -->
+       
+           <!-- Section: Text -->
+           <section class="mb-4">
+             <p>
+               Worldwide Shipping Available
+               <br>
+               Download the BeReal App for more experience
+             </p>
+           </section>
+           <!-- Section: Text -->
+           <!-- Section: Links -->
+           <section class="">
+             <!--Grid row-->
+             <div class="row">
+               <!--Grid column-->
+               <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                 <h5 class="text-uppercase">SUPPORT</h5>
+       
+                 <ul class="list-unstyled mb-0">
+                   <li>
+                     <a class="text-body" href="#!">RETURNS</a>
+                   </li>
+                   <li>
+                     <a class="text-body" href="#!">FAQS</a>
+                   </li>
+                   <li>
+                     <a class="text-body" href="#!">STORE</a>
+                   </li>
+                   <li>
+                     <a class="text-body" href="#!">CONTACT US</a>
+                   </li> 
+                   <li>
+                     <a class="text-body" href="#">WORK WITH US</a>
+                   </li>
+                 </ul>
+               </div>
+               <!--Grid column-->
+       
+                 <!--Grid column-->
+       
+       
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+         <h5 class="text-uppercase"><b>Be Real Studios</b></h5>
+       
+         <ul class="list-unstyled mb-0">
+           <li>
+             <a class="text-body" href="#!">TERMS AND CONDITIONS</a>
+           </li>
+           <li>
+             <a class="text-body" href="store.html">STORE</a>
+           </li>
+           <li>
+             <a class="text-body" href="About.html">ABOUT</a>
+           </li>
+           <li>
+             <a class="text-body" href="acc.html">ACCOUNT</a>
+             </li>
+         </div>
+       <!--Grid column-->
+       
+            <!--Grid column-->
+       
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+             <h5 class="text-uppercase"><b>SOCIAL MEDIA</b></h5>
+       
+             <ul class="list-unstyled mb-0">
+               <li>
+                 <a class="text-body" href="#!">INSTAGRAM</a>
+               </li>
+               <li>
+                 <a class="text-body" href="#">TIKTOK</a>
+               </li>
+               <li>
+                 <a class="text-body" href="#">TWITTER</a>
+               </li>
+               <li>
+                 <a class="text-body" href="#">YOUTUBE</a>
+                 </li>
+       </div>
+       
+       
+             </div>
+             <!--Grid row-->
+           </section>
+           <!-- Section: Links -->
+         </div>
+         <!-- Grid container -->
+       
+         <!-- Copyright -->
+         <div class="text-center" style="background-color: #f1efe7">
+           © 2024 Copyright, BeReal Studios:
+           <a class="text-reset fw-bold" href="https://mdbootstrap.com/"></a>
+         </div>
+         <!-- Copyright -->
+       </footer>
+       <!-- Footer -->
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>    
+</body>
+</html>

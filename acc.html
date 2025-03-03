@@ -4,40 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>account</title> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-     integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+        
+    
+        }
+        .brand-logo{
+
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            background-color: #f1efe7;
+            margin: 0px;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-left: 0px;
+        
+        }
+        
+        .nav-item{
+            background-color: #f1efe7;
+        }
+        .btn:hover{
+            color: grey
+        }
+        .bt{
+            transition: ease;
+        }
+        .btn-search{
+            color: black;
+            border: black;
+        }
+        .btn-search:hover{
+            background-color: gray;
+        }
+        .container3{
+          background-color: #f1efe7;
+        }
+        .btn3{
+          
+          padding: 3px;
+            color: black;
+            border: none;
+            border-left: 100px;
+            background-color: whitesmoke;
+            padding-left: 100px;
+        }
+        .btn3:hover{
+          background-color: lightgrey;
+          color: black;
+        }
+       
+        .form-group{
+          padding-left: 300px;
+          padding-right: 300px;
+          }
+    
+        .btn6{
+          padding-left: 400px;
+          
+        }
+        
+        </style>
 
 </head>
 <body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="brand-logo" href="land.html"><img src="logo br.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              NEW IN
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              COLLECTIONS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="concrete.html">Concrete Dreams</a></li>
+              <li><a class="dropdown-item" href="studios.html">Studios@</a></li>
+              <li><a class="dropdown-item" href="royals.html">Bereal x royals</a></li>
+              <li><a class="dropdown-item" href="threads.html">Throwback Threads</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              CLOTHING
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="tshirt.html">T-Shirts/Shirts</a></li>
+              <li><a class="dropdown-item" href="hoodies.html">Hoodies</a></li>
+              <li><a class="dropdown-item" href="bottoms.html">Bottoms</a></li>
+            </ul>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              CURR/COUNTRY
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="#">KENYA(KSH)</a></li>
+              <li><a class="dropdown-item" href="#">UNITED STATES(USD)</a></li>
+              <li><a class="dropdown-item" href="#">UK(GBP)</a></li>
+              <li><a class="dropdown-item" href="#">FRANCE(EUR)</a></li>
+              <li><a class="dropdown-item" href="#">JAPAN(JPY)</a></li>
+              <li><a class="dropdown-item" href="#">AUSTRALIA(AUD)</a></li>
+              <li><a class="dropdown-item" href="#">NIGERIA(NGN)</a></li>
+            </ul>
+          </li>
+
+          <a href="store.html" class="btn">STORE</a>
+          <a href="About.html" class="btn">ABOUT</a>
+          <a href="acc.html" class="btn">ACCOUNT</a><form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn-search btn-outline-success" type="submit">Search</button>
+            </form>
+           </div>
+          </nav>
+
+    
+
     <div class="account">
         <p style="justify-content: center; text-align: center; align-items: center; font-weight: bold;">
             LOGIN
-        <br>
+        <br> <br>
         </div>
         
    <form>
+    <div class="form-group">
+        <br>
+      <label for="exampleInputEmail1">E-mail address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted"></small>
+    
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Receive our newsletters</label>
+      
+    </div>
+    </form>
+    <button class="btn6">Login</button>
+    <br> <br>
+    <div class="account">
+      <p style="justify-content: center; text-align: center; align-items: center; font-weight: bold;">
+          REGISTER
+      <br>
+      </div>
+
     <div class="form-group">
         
       <label for="exampleInputEmail1">E-mail address</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
       <small id="emailHelp" class="form-text text-muted"></small>
+    
     </div>
     <div class="form-group">
       <label for="exampleInputPassword1">Password</label>
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1"> Confirm Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="ConfirmPassword">
+    </div>
+
     <div class="form-group form-check">
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">Receive our newsletters</label>
     </div>
-    <button type="submit" class="btn3 btn-primary">Login</button>
-    <br>
-    <br>
-    <br>
-    <button class="btn6">Checkout Our Sales</button>
+  </form>
+  
+    <button class="btn6">Sign In</button>
      <!-- Footer -->
 <footer class="bg-body-tertiary text-center">
   <!-- Grid container -->
@@ -111,8 +276,7 @@
     <section class="mb-4">
       <p>
         Worldwide Shipping Available
-        <br>
-        Free Delivery in the country for orders above KSH 5000
+        
         <br>
         Download the BeReal App for more experience
       </p>
@@ -124,7 +288,7 @@
       <div class="row">
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">SUPPORT</h5>
+          <h5 class="text-uppercase"><b>SUPPORT</b></h5>
 
           <ul class="list-unstyled mb-0">
             <li>
@@ -145,6 +309,53 @@
           </ul>
         </div>
         <!--Grid column-->
+
+      
+        <!--Grid column-->
+     
+     
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase"><b>Be Real Studios</b></h5>
+      
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a class="text-body" href="#!">TERMS AND CONDITIONS</a>
+          </li>
+          <li>
+            <a class="text-body" href="store.html">STORE</a>
+          </li>
+          <li>
+            <a class="text-body" href="About.html">ABOUT</a>
+          </li>
+          <li>
+            <a class="text-body" href="acc.html">ACCOUNT</a>
+            </li>
+        </div>
+      <!--Grid column-->
+      
+           <!--Grid column-->
+      
+           <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase"><b>SOCIAL MEDIA</b></h5>
+      
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="text-body" href="#!">INSTAGRAM</a>
+              </li>
+              <li>
+                <a class="text-body" href="#">TIKTOK</a>
+              </li>
+              <li>
+                <a class="text-body" href="#">TWITTER</a>
+              </li>
+              <li>
+                <a class="text-body" href="#">YOUTUBE</a>
+                </li>
+      </div>
+      
+      
+            </div>
+
       </div>
       <!--Grid row-->
     </section>
@@ -154,7 +365,7 @@
 
   <!-- Copyright -->
   <div class="text-center" style="background-color: #f1efe7">
-    © 2025 Copyright, BeReal Studios:
+    © 2024 Copyright, BeReal Studios:
     <a class="text-reset fw-bold" href="https://mdbootstrap.com/"></a>
   </div>
   <!-- Copyright -->
