@@ -8,48 +8,174 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
         
-        .navbar{
-            display: flex;
+        }
+        
+
+        .navbar {
+            background-color:#f1efe7 ;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
             position: fixed;
-            left: 0;
-            right: 0;
+            width: 100%;
             top: 0;
             z-index: 1000;
-            background-color: #f1efe7;
-            margin-right: 0px;
-            
-    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
         }
-        .brand-logo{
 
-            padding: 0px;
-            margin: 0px;
+        .nav-logo img {
+            height: 40px;
+            transition: transform 0.3s ease;
         }
-        .container{
-            background-color: #f1efe7;
-          margin-left: 0px;
-          margin-right: 0px;
+
+        .nav-logo img:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-item {
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link {
+            color: #2a2a2a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #2a2a2a;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #f1efe7;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            padding: 0.5rem 0;
+            min-width: 200px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 0.75rem 1.5rem;
+            color: #4a4a4a;
+            text-decoration: none;
+            display: block;
+            transition: background 0.2s ease;
+  
+        }
+
+        .dropdown-item:hover {
+            background: #f8f7f3;
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 24px;
+            padding: 0.25rem 1rem;
+            border: 1px solid #e0e0e0;
+        }
+
+        .search-input {
+            border: none;
+            padding: 0.5rem;
+            outline: none;
+            background: transparent;
+            width: 180px;
+        }
+
+        .search-button {
+            background: #f1efe7;
+            border: hidden;
+            cursor: pointer;
+            padding: 0.25rem;
+            border-color: gray;
+        }
+        .search-button:hover{
+          background-color: whitesmoke;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            stroke: #2a2a2a;
+            transition: stroke 0.3s ease;
+        }
+
+        .icon:hover {
+            stroke: #666;
+        }
+
+        .mobile-menu {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
             
-        
-        }
-        
-        .nav-item{
-            background-color: #f1efe7;
+            .mobile-menu {
+                display: block;
+            }
         }
         .btn:hover{
-            color: grey
+          color: gray;
         }
-        .bt{
-            transition: ease;
+        .brand-logo{
+          padding-left: 0px;
+          margin-left: 0px;
         }
-        .btn-search{
-            color: black;
-            border: black;
+        .container{
+          background-color: #f1efe7;
+      
         }
-        .btn-search:hover{
-            background-color: gray;
-        }
+        
         .card-title{
             font-weight: bolder;
             font-style: italic;
@@ -107,14 +233,8 @@
             padding-left: 30px;
             padding-top: 30px;
         }
-        .btn2{
-            background-color: grey;
-            color: #f1efe7;
-        }
-        .btn2:hover{
-          background-color: lightgrey;
-          color: black;
-        }
+       
+       
         .col-md-5{
             padding-top: 30px;
         }
@@ -127,7 +247,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
           <div class="container">
-            <a class="brand-logo" href="land.html"><img src="logo br.png"></a>
+            <a class="brand-logo" href="index.html"><img src="logo br.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -187,14 +307,17 @@
                 <a href="About.html" class="btn">ABOUT</a>
                 <a href="acc.html" class="btn">ACCOUNT</a><form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn-search btn-outline-success" type="submit">Search</button>
+                  
+                  <a href="#" class="btn">CART</a>
                     
                   </form>
                  </div>
                 </nav>
                  <div class="card text-bg-dark">
-                    <img src="bground2.png.jpg" class="card-img" alt="...">
+                    <img src="bground22.jpg" class="card-img" alt="background">
+                    
                     <div class="card-img-overlay">
+                      <br><br><br><br>
                       <h5 class="card-title">CONCRETE DREAMS</h5>
                       <br>
                       <br>              

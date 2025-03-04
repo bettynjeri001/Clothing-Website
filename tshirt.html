@@ -7,6 +7,163 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        
+        }
+        
+
+        .navbar {
+            background-color:#f1efe7 ;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+
+        .nav-logo img {
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-logo img:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-item {
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link {
+            color: #2a2a2a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #2a2a2a;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #f1efe7;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            padding: 0.5rem 0;
+            min-width: 200px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 0.75rem 1.5rem;
+            color: #4a4a4a;
+            text-decoration: none;
+            display: block;
+            transition: background 0.2s ease;
+  
+        }
+
+        .dropdown-item:hover {
+            background: #f8f7f3;
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 24px;
+            padding: 0.25rem 1rem;
+            border: 1px solid #e0e0e0;
+        }
+
+        .search-input {
+            border: none;
+            padding: 0.5rem;
+            outline: none;
+            background: transparent;
+            width: 180px;
+        }
+
+        .search-button {
+            background: #f1efe7;
+            border: hidden;
+            cursor: pointer;
+            border-color: gray;
+            color: black;
+        }
+        .search-button:hover{
+          background-color: whitesmoke;
+          color: black;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            stroke: #2a2a2a;
+            transition: stroke 0.3s ease;
+        }
+
+        .icon:hover {
+            stroke: #666;
+        }
+
+        .mobile-menu {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+        }
         .btn3{
             text-align: right;
             justify-content: right;
@@ -37,17 +194,7 @@
             padding-left: 40px;
             padding-bottom: 0px;
         }
-        .navbar{
-            display: flex;
-            justify-content: space-between;
         
-    
-        }
-        .brand-logo{
-
-            padding: 0px;
-            margin: 0px;
-        }
         .container{
             background-color: #f1efe7;
             margin: 0px;
@@ -56,22 +203,13 @@
         
         }
         
-        .nav-item{
-            background-color: #f1efe7;
-        }
         .btn:hover{
             color: grey
         }
         .bt{
             transition: ease;
         }
-        .btn-search{
-            color: black;
-            border: black;
-        }
-        .btn-search:hover{
-            background-color: gray;
-        }
+        
         .card-title{
             font-weight: bolder;
             font-style: italic;
@@ -124,7 +262,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-          <a class="brand-logo" href="land.html"><img src="logo br.png"></a>
+          <a class="brand-logo" href="index.html"><img src="logo br.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -185,12 +323,13 @@
               <a href="About.html" class="btn">ABOUT</a>
               <a href="acc.html" class="btn">ACCOUNT</a><form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn-search btn-outline-success" type="submit">Search</button>
+                  
+                <a href="#" class="btn">CART</a>
                 </form>
                </div>
               </nav>
 
-    
+    <br><br><br>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
@@ -274,6 +413,49 @@
           </div>
         </div>
       </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="tshirt6.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title2">RealTree Shirt</h5>
+              <p class="card-text2">Camo Brown.</p>
+               <small class="text-body-secondary">Ksh 2000</small>
+            </div>
+            <div class="card-footer">
+              <button class="btn3">View Options</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="tshirt7.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <br><br><br>
+              <h5 class="card-title2">Oversized tee</h5>
+              <p class="card-text2">Off Grey.</p>
+              <small class="text-body-secondary">Ksh 2000</small>
+            </div>
+            <div class="card-footer">
+              <button class="btn3">View Options</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="tshirt8.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title2">Longsleeve Shirt with Zipper</h5>
+              <p class="card-text2">Black.</p>
+               <small class="text-body-secondary">Ksh 2000</small>
+            </div>
+            <div class="card-footer">
+              <button class="btn3">View Options</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <!-- Footer -->
 <footer class="bg-body-tertiary text-center">
